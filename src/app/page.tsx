@@ -38,7 +38,7 @@ export default function Home() {
   async function forecast(city: string) {
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=30&appid=46b029641470d0a59f6545a6d0cc16a4`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=55&appid=46b029641470d0a59f6545a6d0cc16a4`
       );
       const resp = await response.json();
       setNextWeatherData(resp);
